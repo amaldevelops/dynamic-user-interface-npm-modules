@@ -1,7 +1,7 @@
 {
-  "name": "webdevgithubprojecttemplate",
+  "name": "dynamicUserInterfaceInteractions",
   "version": "1.0.0",
-  "description": "GitHub Repository Template for Web Development Projects",
+  "description": "User Interface modules",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
