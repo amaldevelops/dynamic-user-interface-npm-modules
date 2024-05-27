@@ -16,7 +16,7 @@
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   dropDownMenu: () => (/* binding */ dropDownMenu)\n/* harmony export */ });\n//This Node Module will allow you to create drop down menus\n\n\nclass dropDownMenu\n{\n    constructor()\n    {\n\n    }\n\n    createNewDropDown()\n    {\n\n        console.log(\"Drop down module loaded\");\n\n\n    }\n}\n\n//# sourceURL=webpack://dynamicUserInterfaceInteractions/./dropDownMenus/dropDownMenuModule.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   dropDownMenu: () => (/* binding */ dropDownMenu)\n/* harmony export */ });\n//This Node Module will allow you to create drop down menus\n\n\nclass dropDownMenu\n{\n    constructor()\n    {\n\n    }\n\n    createNewDropDown()\n    {\n\n        // console.log(\"Drop down module loaded\");\n        const dropDownMenu=document.querySelector(\".dropDownMenu\");\n        // console.log(dropDownMenu);\n        dropDownMenu.style.display=\"none\";\n\n\n    }\n}\n\n//# sourceURL=webpack://dynamicUserInterfaceInteractions/./dropDownMenus/dropDownMenuModule.js?");
 
 /***/ }),
 

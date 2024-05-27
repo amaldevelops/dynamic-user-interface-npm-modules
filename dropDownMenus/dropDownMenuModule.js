@@ -11,7 +11,10 @@ export class dropDownMenu
     createNewDropDown()
     {
 
-        console.log("Drop down module loaded");
+        // console.log("Drop down module loaded");
+        const dropDownMenu=document.querySelector(".dropDownMenu");
+        // console.log(dropDownMenu);
+        dropDownMenu.style.display="none";
 
 
     }
