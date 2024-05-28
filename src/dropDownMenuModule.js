@@ -1,31 +1,27 @@
 //This Node Module will allow you to create drop down menus
 
+//Usage
+// buttonName is the class name of the button to apply drop down to
+// menuContent is the class name of the content that will be displayed in the drop down, this needs to be hard coded in the HTML document
+// buttonType, you can set click, mouseover
+// menuDelay is an integer value in milliseconds to set the menu display time after button click, i.e 3000 = 3 Seconds
 
-export class dropDownMenu
-{
-    constructor()
-    {
+export class dropDownMenu {
+  constructor() {}
 
-    }
+  createNewDropDown(buttonName, menuContent, buttonType, menuDelay) {
+    const dropDownMenu = document.querySelector(menuContent);
+    const dropDownButton = document.querySelector(buttonName);
 
-    createNewDropDown()
-    {
-        const dropDownDiv=document.querySelector('.dropDownDiv')
-        const dropDownMenu=document.querySelector('.dropDownMenu');
-        const dropDownButton=document.querySelector('.dropDownButton');
-  
-        dropDownMenu.style.display="none";
+    dropDownMenu.style.display = "none";
 
-        dropDownButton.addEventListener('mouseover',function()
-        {
-            dropDownMenu.style.display='block';
-        });
+    dropDownButton.addEventListener(buttonType, function () {
+      dropDownMenu.style.display = "block";
 
-        // dropDownDiv.addEventListener('mouseout', function()
-        // {
-        //     dropDownMenu.style.display='none';
-        // });
-
-
-    }
+      // Hide the menu after x seconds using setTimeout
+      setTimeout(function () {
+        dropDownMenu.style.display = "none";
+      }, menuDelay); // 1000 milliseconds = 1 second
+    });
+  }
 }
