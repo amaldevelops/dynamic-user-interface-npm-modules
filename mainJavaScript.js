@@ -10,26 +10,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./dropDownMenus/dropDownMenuModule.js":
-/*!*********************************************!*\
-  !*** ./dropDownMenus/dropDownMenuModule.js ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   dropDownMenu: () => (/* binding */ dropDownMenu)\n/* harmony export */ });\n//This Node Module will allow you to create drop down menus\n\n\nclass dropDownMenu\n{\n    constructor()\n    {\n\n    }\n\n    createNewDropDown()\n    {\n\n        // console.log(\"Drop down module loaded\");\n        const dropDownMenu=document.querySelector(\".dropDownMenu\");\n        // console.log(dropDownMenu);\n        dropDownMenu.style.display=\"none\";\n\n\n    }\n}\n\n//# sourceURL=webpack://dynamicUserInterfaceInteractions/./dropDownMenus/dropDownMenuModule.js?");
-
-/***/ }),
-
-/***/ "./imageCarousel/imageCarouselModule.js":
-/*!**********************************************!*\
-  !*** ./imageCarousel/imageCarouselModule.js ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   imageCarousel: () => (/* binding */ imageCarousel)\n/* harmony export */ });\n// This Node module will allow you to use Image Carousels\n\n\nclass imageCarousel\n{\n    constructor()\n    {\n\n    }\n\n    newImageCarousel()\n    {\n        console.log(\"Image Carousel module loaded\");\n\n    }\n}\n\n//# sourceURL=webpack://dynamicUserInterfaceInteractions/./imageCarousel/imageCarouselModule.js?");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/mainStyleSheet.css":
 /*!**********************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/mainStyleSheet.css ***!
@@ -136,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mainStyleSheet_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainStyleSheet.css */ \"./src/mainStyleSheet.css\");\n/* harmony import */ var _imageCarousel_imageCarouselModule_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../imageCarousel/imageCarouselModule.js */ \"./imageCarousel/imageCarouselModule.js\");\n/* harmony import */ var _dropDownMenus_dropDownMenuModule_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../dropDownMenus/dropDownMenuModule.js */ \"./dropDownMenus/dropDownMenuModule.js\");\n//This is the main JavaScript file\n\n//ES Module Imports\n//Following will import the CSS file used to style the project\n\n\n\n\n\nconst newImageCarousel=new _imageCarousel_imageCarouselModule_js__WEBPACK_IMPORTED_MODULE_1__.imageCarousel;\nconst newDropDownMenu=new _dropDownMenus_dropDownMenuModule_js__WEBPACK_IMPORTED_MODULE_2__.dropDownMenu;\n\nnewImageCarousel.newImageCarousel();\nnewDropDownMenu.createNewDropDown();\n\n\n//# sourceURL=webpack://dynamicUserInterfaceInteractions/./src/mainJavaScript.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mainStyleSheet_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mainStyleSheet.css */ \"./src/mainStyleSheet.css\");\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module '/imageCarousel/imageCarouselModule.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module '/dropDownMenus/dropDownMenuModule.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n//This is the main JavaScript file\n\n//ES Module Imports\n//Following will import the CSS file used to style the project\n\n\n\n\n\nconst newImageCarousel=new Object(function webpackMissingModule() { var e = new Error(\"Cannot find module '/imageCarousel/imageCarouselModule.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nconst newDropDownMenu=new Object(function webpackMissingModule() { var e = new Error(\"Cannot find module '/dropDownMenus/dropDownMenuModule.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\nnewImageCarousel.newImageCarousel();\nnewDropDownMenu.createNewDropDown();\n\n\n//# sourceURL=webpack://dynamicUserInterfaceInteractions/./src/mainJavaScript.js?");
 
 /***/ })
 
