@@ -1,7 +1,7 @@
 {
-  "name": "dynamicUserInterfaceInteractions",
+  "name": "dynamicUserInterfaceInteractionModules",
   "version": "1.0.0",
-  "description": "User Interface modules",
+  "description": "User Interface modules that can be used in Front End Web Development. Currently has Menu Drop downs and Image Carousel modules that can be used in projects",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

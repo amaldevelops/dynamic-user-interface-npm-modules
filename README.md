@@ -1,8 +1,7 @@
-# WebDevGitHubProjectTemplate
-
-GitHub Repository Template for Web Development Projects
-
-This repository provides a comprehensive template for your web development projects, incorporating essential tools for efficient development and maintaining high code quality.
+# Dynamic User Interface Modules
+This NPM Package contains the following modules you can use in your projects
+(1) Image drop down module
+(2) Image Carousel module
 
 ## Features
 

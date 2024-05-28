@@ -3,8 +3,8 @@
 //ES Module Imports
 //Following will import the CSS file used to style the project
 import "./mainStyleSheet.css";
-import {imageCarousel} from "/imageCarousel/imageCarouselModule.js"
-import {dropDownMenu} from "/dropDownMenus/dropDownMenuModule.js"
+import {imageCarousel} from "./imageCarouselModule.js"
+import {dropDownMenu} from "./dropDownMenuModule.js"
 
 
 const newImageCarousel=new imageCarousel;
