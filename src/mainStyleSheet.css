@@ -38,27 +38,54 @@ li {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
   grid-template-rows: 1fr 2fr 2fr 1fr;
-  /* margin: 2rem; */
   width: 80rem;
   height: 40rem;
   background-color: #b4c1b8;
+  /* z-index: 3; */
 }
 
 .imageCarouselFrame {
-  /* width: 40rem;
-  height: 20rem; */
+
   grid-column: 2/4;
   grid-row: 2/4;
   background-color: #36ff79;
-  z-index: 10;
+  z-index: 1;
 }
 
 .imageCarouselimages {
-  /* width: 80rem;
-  height: 20rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-column: 2/4;
   grid-row: 2/4;
   background-color: #ffa136;
+  z-index: 2;
+  width:80rem;
+
+}
+
+.imageDiv1{
+  grid-column: 1/2;
+  grid-template-rows: 1/1;
+  background-image: url('../src/images/Image1.jpg');
+  background-size: cover;
+ 
+}
+
+.imageDiv2{
+  grid-column: 2/3;
+  grid-template-rows: 1/1;
+  background-image: url('../src/images/Image2.jpg');
+  background-size: cover;
+ 
+}
+
+.imageDiv3{
+  grid-column: 3/4;
+  grid-template-rows: 1/1;
+  background-image: url('../src/images/Image3.jpg');
+  background-size: cover;
+ 
 }
 
 .leftArrowDiv {
