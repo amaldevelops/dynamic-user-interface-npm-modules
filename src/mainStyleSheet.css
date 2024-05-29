@@ -9,14 +9,12 @@ h1 {
   font-size: 3rem;
 }
 
-h2
-{
-font-size: 2rem;
+h2 {
+  font-size: 2rem;
 }
 
-p
-{
-font-size: 1.5rem;
+p {
+  font-size: 1.5rem;
 }
 
 .dropDownDiv {
@@ -27,14 +25,12 @@ font-size: 1.5rem;
   background-color: #ffa136;
 }
 
-ul{
+ul {
   list-style-type: none;
   padding: 0px;
-  
 }
 
-li
-{
+li {
   font-size: 2.5rem;
 }
 
@@ -64,3 +60,55 @@ li
   grid-row: 2/4;
   background-color: #ffa136;
 }
+
+.leftArrowDiv {
+  grid-column: 1/1;
+  grid-row:3/3;
+  padding:2rem;
+}
+
+.rightArrowDiv {
+  grid-column: 4/5;
+  grid-row:3/3;
+  padding:2rem;
+}
+
+.circleNavigation {
+  grid-column: 1/5;
+  grid-row:4/5;
+  padding:2rem;
+  place-self: center;
+}
+
+.arrowButtonLeft{
+  background-image: url('../src/images/noun-previous-1920925.svg');
+  background-repeat: no-repeat;
+  background-color: #dedad1;
+  width:10rem;
+  height:10rem;
+  background-size: 9rem;
+}
+
+.arrowButtonRight{
+  background-image: url('../src/images/noun-right-1920922.svg');
+  background-repeat: no-repeat;
+  background-color: #dedad1;
+  width:10rem;
+  height:10rem;
+  background-size: 9rem;
+}
+
+.leftCircle, .middleCircle, .rightCircle{
+  background-image: url('../src/images/noun-circle-6848128.svg');
+  background-repeat: no-repeat;
+  background-color: #dedad1;
+  width:4rem;
+  height:4rem;
+  background-size: 4rem;
+  background-position:center;
+  opacity:0.5;
+}
+
+
+
+

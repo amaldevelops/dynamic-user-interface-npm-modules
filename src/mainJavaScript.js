@@ -7,6 +7,7 @@ import { dropDownMenu } from "./dropDownMenuModule.js";
 import { imageCarousel } from "./imageCarouselModule.js";
 
 
+
 const newImageCarousel = new imageCarousel();
 const newDropDownMenu1 = new dropDownMenu();
 const newDropDownMenu2 = new dropDownMenu();
