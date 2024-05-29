@@ -1,17 +1,66 @@
 /* This is the main CSS File */
 
+html {
+  font-size: 10px; /* Adjust as needed */
+}
+
 h1 {
   color: #130909;
+  font-size: 3rem;
+}
+
+h2
+{
+font-size: 2rem;
+}
+
+p
+{
+font-size: 1.5rem;
 }
 
 .dropDownDiv {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
+  margin: 20px;
   background-color: #ffa136;
 }
 
-ul {
+ul{
   list-style-type: none;
   padding: 0px;
+  
+}
+
+li
+{
+  font-size: 2.5rem;
+}
+
+.imageCarouselContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  /* margin: 2rem; */
+  width: 80rem;
+  height: 40rem;
+  background-color: #b4c1b8;
+}
+
+.imageCarouselFrame {
+  /* width: 40rem;
+  height: 20rem; */
+  grid-column: 2/4;
+  grid-row: 2/4;
+  background-color: #36ff79;
+  z-index: 10;
+}
+
+.imageCarouselimages {
+  /* width: 80rem;
+  height: 20rem; */
+  grid-column: 2/4;
+  grid-row: 2/4;
+  background-color: #ffa136;
 }
