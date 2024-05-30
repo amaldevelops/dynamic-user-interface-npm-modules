@@ -1,7 +1,11 @@
 // This Node module will allow you to use Image Carousels
 
 export class imageCarousel {
-  constructor() {}
+  constructor() {
+    this.imageDiv1 = document.querySelector(".imageCarouselImagesDiv");
+    this.imageDiv2 = document.querySelector(".imageCarouselImagesDiv");
+    this.imageDiv3 = document.querySelector(".imageCarouselImagesDiv");
+  }
 
   userInput() {
     const leftButton = document.querySelector(".arrowButtonLeft");
@@ -12,33 +16,64 @@ export class imageCarousel {
 
     // Left button
     leftButton.addEventListener("click", () => {
-      console.log("Left button clicked");
+      this.moveLeft();
     });
 
     //Right Button
     rightButton.addEventListener("click", () => {
-      console.log("Right button clicked");
+      this.moveRight();
     });
 
-    // Left Circle Button
+    // 1st Circle Button
 
     leftCircleButton.addEventListener("click", () => {
-      console.log("Left circle button clicked");
+      this.circleButton1Clicked();
     });
 
-    // Middle Circle Button
+    // 2nd Circle Button
 
     middleCircleButton.addEventListener("click", () => {
-      console.log("Middle circle button clicked");
+      this.circleButton2Clicked();
     });
 
-    // Right Circle Button
+    // 3rd Circle Button
     rightCircleButton.addEventListener("click", () => {
-      console.log("Right circle button clicked");
+      this.circleButton3Clicked();
     });
   }
 
-  newImageCarousel() {
-    console.log("Image Carousel module loaded");
+  moveLeft() {
+    this.imageDiv1.style.gridRowStart = 1;
+    this.imageDiv1.style.gridRowEnd = 4;
+    this.imageDiv1.style.gridColumnStart = 2;
+    this.imageDiv1.style.gridColumnEnd = 4;
+  }
+
+  moveRight() {
+    this.imageDiv2.style.gridRowStart = 1;
+    this.imageDiv2.style.gridRowEnd = 2;
+    this.imageDiv2.style.gridColumnStart = 1;
+    this.imageDiv2.style.gridColumnEnd = 2;
+  }
+
+  circleButton1Clicked() {
+    this.imageDiv1.style.gridRowStart = 1;
+    this.imageDiv1.style.gridRowEnd = 4;
+    this.imageDiv1.style.gridColumnStart = 2;
+    this.imageDiv1.style.gridColumnEnd = 4;
+  }
+
+  circleButton2Clicked() {
+    this.imageDiv2.style.gridRowStart = 1;
+    this.imageDiv2.style.gridRowEnd = 4;
+    this.imageDiv2.style.gridColumnStart = 2;
+    this.imageDiv2.style.gridColumnEnd = 4;
+  }
+
+  circleButton3Clicked() {
+    this.imageDiv3.style.gridRowStart = 1;
+    this.imageDiv3.style.gridRowEnd = 4;
+    this.imageDiv3.style.gridColumnStart = 2;
+    this.imageDiv3.style.gridColumnEnd = 4;
   }
 }

@@ -37,36 +37,38 @@ li {
 
 .imageCarouselContainer {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 2fr 1fr;
-  width: 80rem;
-  height: 40rem;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  width: 100rem;
+  height: 50rem;
   background-color: #b4c1b8;
   overflow: hidden;
 }
 
 .imageCarouselFrame {
-  grid-column: 2/4;
-  grid-row: 2/4;
+  grid-column: 2/3;
+  grid-row: 2/3;
   width: 50rem;
   height: 30rem;
   border: 0.5rem solid rgb(121, 155, 218);
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 1;
 }
 
-.imageCarouselimages {
+.imageCarouselImagesDiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-column: 2/4;
-  grid-row: 2/4;
-  column-gap: 2rem;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  /* column-gap: 2rem; */
   justify-items: center;
   background-color: #ffa136;
   width: 90rem;
-  height: 22rem;
-  position: relative;
+  height: 30rem;
+  /* position: relative; */
+  overflow: hidden;
+
 }
 
 .imageDiv1 {
@@ -94,18 +96,22 @@ li {
   background-size: contain;
   width: 52rem;
   height: 30rem;
+  overflow: hidden;
+
 }
 
 .leftArrowDiv {
   grid-column: 1/2;
-  grid-row: 3/3;
+  grid-row: 2/3;
   padding: 2rem;
+  place-self: center; 
 }
 
 .rightArrowDiv {
   grid-column: 4/5;
-  grid-row: 3/3;
+  grid-row: 2/3;
   padding: 2rem;
+  place-self: center;
 }
 
 .circleNavigation {
