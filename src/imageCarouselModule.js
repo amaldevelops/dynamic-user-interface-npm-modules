@@ -43,37 +43,22 @@ export class imageCarousel {
   }
 
   moveLeft() {
-    this.imageDiv1.style.gridRowStart = 1;
-    this.imageDiv1.style.gridRowEnd = 4;
-    this.imageDiv1.style.gridColumnStart = 2;
-    this.imageDiv1.style.gridColumnEnd = 4;
+    this.imageDiv1.style["grid-area"] = "2/1/3/3";
   }
 
   moveRight() {
-    this.imageDiv2.style.gridRowStart = 1;
-    this.imageDiv2.style.gridRowEnd = 2;
-    this.imageDiv2.style.gridColumnStart = 1;
-    this.imageDiv2.style.gridColumnEnd = 2;
+    this.imageDiv1.style["grid-area"] = "2/2/3/4";
   }
 
   circleButton1Clicked() {
-    this.imageDiv1.style.gridRowStart = 1;
-    this.imageDiv1.style.gridRowEnd = 4;
-    this.imageDiv1.style.gridColumnStart = 2;
-    this.imageDiv1.style.gridColumnEnd = 4;
+    this.imageDiv1.style["grid-area"] = "2/2/3/3";
   }
 
   circleButton2Clicked() {
-    this.imageDiv2.style.gridRowStart = 1;
-    this.imageDiv2.style.gridRowEnd = 4;
-    this.imageDiv2.style.gridColumnStart = 2;
-    this.imageDiv2.style.gridColumnEnd = 4;
+    this.imageDiv1.style["grid-area"] = "2/1/3/2";
   }
 
   circleButton3Clicked() {
-    this.imageDiv3.style.gridRowStart = 1;
-    this.imageDiv3.style.gridRowEnd = 4;
-    this.imageDiv3.style.gridColumnStart = 2;
-    this.imageDiv3.style.gridColumnEnd = 4;
+    this.imageDiv1.style["grid-area"] = "2/3/3/4";
   }
 }
