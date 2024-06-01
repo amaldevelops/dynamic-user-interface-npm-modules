@@ -47,30 +47,51 @@ li {
   max-width: 100%;
 }
 
+/*
+.movingTrack
+{
+  grid-column: 3/4;
+  grid-row: 1/2;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  background-color: #3636ff;
+  width: 150rem;
+  height: 30rem;
+  overflow: hidden;
+
+}
+*/
+
+
 .imageCarouselFrame {
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-rows:1fr;
   grid-column: 2/3;
   grid-row: 2/3;
-  width: 50rem;
-  height: 30rem;
+  /* width: 50rem;
+  height: 30rem; */
   border: 0.5rem solid rgb(121, 155, 218);
-  /* overflow: hidden; */
+  overflow: hidden;
   z-index: 1;
   max-width: 100%;
-  /* position: absolute; */
 }
 
 .imageCarouselImagesDiv {
-  grid-column: 2/3;
-  grid-row: 2/3;
+  grid-column: 3/4;
+  grid-row: 1/2;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   /* column-gap: 2rem; */
-  justify-items: center;
+  /* justify-items: center; */
   background-color: #ffa136;
-  width: 90rem;
-  height: 30rem;
+  /* width: 90rem;
+  height: 30rem; */
   /* position: relative; */
   overflow: hidden;
   max-width: 100%;
@@ -78,7 +99,7 @@ li {
 
 .imageDiv1 {
   grid-column: 1/2;
-  grid-row: 1/1;
+  grid-row: 1/2;
   background-image: url("../src/images/Image1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,6 +107,7 @@ li {
   height: 28rem;
   /* justify-items: center; */
   max-width: 100%;
+  place-self: center;
 }
 
 .imageDiv2 {
@@ -97,6 +119,7 @@ li {
   width: 52rem;
   height: 28rem;
   max-width: 100%;
+  place-self: center;
 }
 
 .imageDiv3 {
@@ -108,6 +131,7 @@ li {
   width: 52rem;
   height: 28rem;
   overflow: hidden;
+  place-self: center;
 }
 
 .leftArrowDiv {
@@ -118,7 +142,7 @@ li {
 }
 
 .rightArrowDiv {
-  grid-column: 4/5;
+  grid-column: 3/4;
   grid-row: 2/3;
   padding: 2rem;
   place-self: center;
@@ -161,3 +185,4 @@ li {
   background-position: center;
   opacity: 0.5;
 }
+
