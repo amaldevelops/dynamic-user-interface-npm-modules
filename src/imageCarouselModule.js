@@ -43,11 +43,11 @@ export class imageCarousel {
   }
 
   moveLeft() {
-    this.imageCarouselImagesDiv.style["grid-area"] = "2/1/3/4";
+    this.imageDiv1.style["grid-area"] = "2/1/3/2";
   }
 
   moveRight() {
-    this.imageCarouselImagesDiv.style["grid-area"] = "2/2/3/4";
+    this.imageDiv2.style["grid-area"] = "2/2/3/3";
   }
 
   circleButton1Clicked() {

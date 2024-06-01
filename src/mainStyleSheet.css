@@ -2,7 +2,7 @@
 /* Amal Kariyawasam, 2024 */
 
 html {
-  font-size: 10px; /* Adjust as needed */
+  font-size: 10px; 
 }
 
 h1 {
@@ -72,27 +72,18 @@ li {
   grid-template-rows:1fr;
   grid-column: 2/3;
   grid-row: 2/3;
-  /* width: 50rem;
-  height: 30rem; */
   border: 0.5rem solid rgb(121, 155, 218);
   overflow: hidden;
   z-index: 1;
-  max-width: 100%;
 }
 
 .imageCarouselImagesDiv {
   grid-column: 3/4;
   grid-row: 1/2;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  /* column-gap: 2rem; */
-  /* justify-items: center; */
   background-color: #ffa136;
-  /* width: 90rem;
-  height: 30rem; */
-  /* position: relative; */
   overflow: hidden;
   max-width: 100%;
 }
@@ -101,11 +92,10 @@ li {
   grid-column: 1/2;
   grid-row: 1/2;
   background-image: url("../src/images/Image1.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 52rem;
+  width: 80rem;
   height: 28rem;
-  /* justify-items: center; */
   max-width: 100%;
   place-self: center;
 }
@@ -114,9 +104,9 @@ li {
   grid-column: 2/3;
   grid-row: 1/2;
   background-image: url("../src/images/Image2.jpg");
-  background-size: cover;
+  background-size:contain;
   background-repeat: no-repeat;
-  width: 52rem;
+  width: 80rem;
   height: 28rem;
   max-width: 100%;
   place-self: center;
@@ -126,9 +116,9 @@ li {
   grid-column: 3/4;
   grid-row: 1/2;
   background-image: url("../src/images/Image3.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 52rem;
+  width: 80rem;
   height: 28rem;
   overflow: hidden;
   place-self: center;
