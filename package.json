@@ -1,6 +1,6 @@
 {
-  "name": "dynamicUserInterfaceInteractionModules",
-  "version": "1.0.0",
+  "name": "dynamic_user_interface_modules",
+  "version": "1.0.1",
   "description": "User Interface modules that can be used in Front End Web Development. Currently has Menu Drop downs and Image Carousel modules that can be used in projects",
   "main": "webpack.config.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "gh-pages": "git subtree push --prefix dist origin gh-pages && git push"
   },
   "keywords": [],
-  "author": "Amal Kariyawasam",
+  "author": "Amal Kariyawasam (https://1amal.github.io/)",
   "license": "GPL V3",
   "devDependencies": {
     "css-loader": "^7.1.2",
@@ -21,5 +21,8 @@
     "style-loader": "^4.0.0",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "dynamic_user_interface_modules": "^1.0.0"
   }
 }
