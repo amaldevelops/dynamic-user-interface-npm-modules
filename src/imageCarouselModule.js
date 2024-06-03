@@ -5,6 +5,9 @@ export class imageCarousel {
     this.imageDiv1 = document.querySelector(".imageDiv1");
     this.imageDiv2 = document.querySelector(".imageDiv2");
     this.imageDiv3 = document.querySelector(".imageDiv3");
+    this.leftCircleButton = document.querySelector(".leftCircle");
+    this.middleCircleButton = document.querySelector(".middleCircle");
+    this.rightCircleButton = document.querySelector(".rightCircle");
   }
 
   userInput() {
@@ -56,18 +59,31 @@ export class imageCarousel {
     this.imageDiv1.style["grid-area"] = "2/1/3/2";
     this.imageDiv2.style["grid-area"] = "2/2/3/3";
     this.imageDiv3.style["grid-area"] = "2/3/3/4";
+
+    this.leftCircleButton.style.backgroundColor='red';
+    this.middleCircleButton.style.backgroundColor='';
+    this.rightCircleButton.style.backgroundColor='';
+
   }
 
   circleButton2Clicked() {
     this.imageDiv1.style["grid-area"] = "2/2/3/3";
     this.imageDiv2.style["grid-area"] = "2/1/3/2";
     this.imageDiv3.style["grid-area"] = "2/3/3/4";
+
+    this.leftCircleButton.style.backgroundColor='';
+    this.middleCircleButton.style.backgroundColor='red';
+    this.rightCircleButton.style.backgroundColor='';
   }
 
   circleButton3Clicked() {
     this.imageDiv1.style["grid-area"] = "2/3/3/4";
     this.imageDiv2.style["grid-area"] = "2/2/3/3";
     this.imageDiv3.style["grid-area"] = "2/1/3/2";
+
+    this.leftCircleButton.style.backgroundColor='';
+    this.middleCircleButton.style.backgroundColor='';
+    this.rightCircleButton.style.backgroundColor='red';
   }
 
   animateCarousel() {
