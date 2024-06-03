@@ -26,4 +26,5 @@ newDropDownMenu2.createNewDropDown(
 );
 
 newImageCarousel.userInput();
-newImageCarousel.animateCarousel()
+
+newImageCarousel.carouselAnimationRepeat();

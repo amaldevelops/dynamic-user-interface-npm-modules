@@ -2,7 +2,7 @@
 /* Amal Kariyawasam, 2024 */
 
 html {
-  font-size: 10px; 
+  font-size: 10px;
 }
 
 h1 {
@@ -47,29 +47,10 @@ li {
   max-width: 100%;
 }
 
-/*
-.movingTrack
-{
-  grid-column: 3/4;
-  grid-row: 1/2;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-
-  background-color: #3636ff;
-  width: 150rem;
-  height: 30rem;
-  overflow: hidden;
-
-}
-*/
-
-
 .imageCarouselFrame {
-  display:grid;
-  grid-template-columns:1fr;
-  grid-template-rows:1fr;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   grid-column: 2/3;
   grid-row: 2/3;
   border: 0.5rem solid rgb(121, 155, 218);
@@ -104,7 +85,7 @@ li {
   grid-column: 2/3;
   grid-row: 1/2;
   background-image: url("../src/images/Image2.jpg");
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 80rem;
   height: 28rem;
@@ -175,4 +156,3 @@ li {
   background-position: center;
   opacity: 0.5;
 }
-

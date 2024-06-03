@@ -60,10 +60,9 @@ export class imageCarousel {
     this.imageDiv2.style["grid-area"] = "2/2/3/3";
     this.imageDiv3.style["grid-area"] = "2/3/3/4";
 
-    this.leftCircleButton.style.backgroundColor='red';
-    this.middleCircleButton.style.backgroundColor='';
-    this.rightCircleButton.style.backgroundColor='';
-
+    this.leftCircleButton.style.backgroundColor = "red";
+    this.middleCircleButton.style.backgroundColor = "";
+    this.rightCircleButton.style.backgroundColor = "";
   }
 
   circleButton2Clicked() {
@@ -71,9 +70,9 @@ export class imageCarousel {
     this.imageDiv2.style["grid-area"] = "2/1/3/2";
     this.imageDiv3.style["grid-area"] = "2/3/3/4";
 
-    this.leftCircleButton.style.backgroundColor='';
-    this.middleCircleButton.style.backgroundColor='red';
-    this.rightCircleButton.style.backgroundColor='';
+    this.leftCircleButton.style.backgroundColor = "";
+    this.middleCircleButton.style.backgroundColor = "red";
+    this.rightCircleButton.style.backgroundColor = "";
   }
 
   circleButton3Clicked() {
@@ -81,9 +80,15 @@ export class imageCarousel {
     this.imageDiv2.style["grid-area"] = "2/2/3/3";
     this.imageDiv3.style["grid-area"] = "2/1/3/2";
 
-    this.leftCircleButton.style.backgroundColor='';
-    this.middleCircleButton.style.backgroundColor='';
-    this.rightCircleButton.style.backgroundColor='red';
+    this.leftCircleButton.style.backgroundColor = "";
+    this.middleCircleButton.style.backgroundColor = "";
+    this.rightCircleButton.style.backgroundColor = "red";
+  }
+
+  carouselAnimationRepeat() {
+    setInterval(() => {
+      this.animateCarousel();
+    }, 20000);
   }
 
   animateCarousel() {
