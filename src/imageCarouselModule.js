@@ -1,4 +1,5 @@
 // This Node module will allow you to use Image Carousels
+// Amal Kariyawasam, 2024
 
 export class imageCarousel {
   constructor() {

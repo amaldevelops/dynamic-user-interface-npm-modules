@@ -9,8 +9,8 @@
     "gh-pages": "git subtree push --prefix dist origin gh-pages && git push"
   },
   "keywords": [],
-  "author": "Amal K",
-  "license": "ISC",
+  "author": "Amal Kariyawasam",
+  "license": "GPL V3",
   "devDependencies": {
     "css-loader": "^7.1.2",
     "eslint": "^9.3.0",
