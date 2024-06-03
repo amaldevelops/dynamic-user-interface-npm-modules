@@ -43,11 +43,13 @@ export class imageCarousel {
   }
 
   moveLeft() {
-    this.imageDiv1.style["grid-area"] = "2/1/3/2";
+    // this.imageDiv1.style["grid-area"] = "2/1/3/2";
+    this.circleButton1Clicked();
   }
 
   moveRight() {
-    this.imageDiv2.style["grid-area"] = "2/2/3/3";
+    // this.imageDiv2.style["grid-area"] = "2/2/3/3";
+    this.circleButton3Clicked();
   }
 
   circleButton1Clicked() {
@@ -65,6 +67,18 @@ export class imageCarousel {
   circleButton3Clicked() {
     this.imageDiv1.style["grid-area"] = "2/3/3/4";
     this.imageDiv2.style["grid-area"] = "2/2/3/3";
-    this.imageDiv3.style["grid-area"] = "2/1/3/2" ;
+    this.imageDiv3.style["grid-area"] = "2/1/3/2";
+  }
+
+  animateCarousel() {
+    setTimeout(() => {
+      this.circleButton1Clicked();
+    }, 5000);
+    setTimeout(() => {
+      this.circleButton2Clicked();
+    }, 10000);
+    setTimeout(() => {
+      this.circleButton3Clicked();
+    }, 15000);
   }
 }
